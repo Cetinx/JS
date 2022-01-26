@@ -1,0 +1,21 @@
+    const express = require('express')
+
+
+    const app = express()
+
+
+    //Template
+    app.set("view engine","ejs")
+
+
+    //Middlewares
+    app.use(express.static("public"))
+
+
+    const pageRoute = require('./routes/pageRoute')
+
+    app.use('/' , pageRoute)
+
+
+
+    app.listen(3000)

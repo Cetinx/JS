@@ -1,0 +1,11 @@
+const express = require('express')
+
+const pageContoller = require('../controllers/pageContoller')
+
+const router = express.Router()
+
+router.route('/').get(pageContoller.getIndexPage)
+
+router.route('/about').get(pageContoller.getAboutPage)
+
+module.exports = router

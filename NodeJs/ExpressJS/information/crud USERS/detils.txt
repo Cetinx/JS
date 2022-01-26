@@ -1,0 +1,22 @@
+npm init -y ayarlarnı ayarlama
+express yapısını oluşturma
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Template Düzenleme
+
+ilk template belirleme ejs,react,vue,anguler
+kolosörleri ayarlama  
+uzantıları  düzenleme
+son ayarları yapma
+
+---------------------------------------------------------------------------------------------------------------------------
+
+MVC+R Yapısını Yapma
+models , Controllers , views + Routes
+ 
+---------------------------------------------------------------------------------------------------------------------------
+
+Models Dosyasını Ayarlama (Server Client)
+
+Mongoose İndirme

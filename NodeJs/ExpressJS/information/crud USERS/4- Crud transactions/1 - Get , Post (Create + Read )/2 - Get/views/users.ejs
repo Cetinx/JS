@@ -1,0 +1,114 @@
+<%- include('.//partys/nav.ejs') %>
+
+                    <div id="page-content-wrapper">
+                        <br><br><br>
+
+                        <div class="tab-content">
+                        
+                            <div id="menu2" class="tab-pane in active">
+                                <div class="row justify-content-center">
+                                    <div class="col-12">
+                                        <div class="form-card">
+                                            <h3 class="mt-0 mb-4 text-center">Users</h3>
+
+
+                                            <div class="content">
+                                              <div class="container-flux">
+                                                <div class="table-responsive">
+                                         
+                                                  <table class="table custom-table">
+                                          
+                                                    <thead>
+                                                      <tr class="table-primary">
+                                                        <th scope="col">
+                                                   <label class="control control--checkbox">  </label>
+                  
+                                                 
+                                                   <th scope="col">Name</th>
+                                                   <th scope="col">Description</th>
+                                                   <th scope="col">Setting</th>
+                                                  </tr>
+                                                  
+                                                </thead>
+                                                       
+                                                  
+                                                    <tbody class="table-dark">
+                                                      <% for (i = 0; i < user.length; i++) { %> 
+                                                      
+                                                        
+                                                      
+                                                      <tr>
+                                                        <th scope="row">
+                                                          <label class="control control--checkbox">
+                                                            <input type="checkbox"/>
+                                                            <div class="control__indicator"></div>
+                                                          </label>
+                                                        </th>
+                                                       
+                                                        <td><%=user[i].name %> </td>
+                                                        <td><%=user[i].desc %> </td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-primary">Update</button>
+                                                            <button type="button" class="btn btn-danger">Delete</button>
+                                                        </td>
+                                                     
+                                                      </tr>
+
+                                                      <% } %> 
+                                                
+                                                      
+                                                    </tbody>
+                                                  </table>
+                                               
+
+
+                                                </div>
+
+                                              </div>
+                                          
+                                            </div>
+                                              
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                                <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+                                <script type='text/javascript' src=''></script>
+                                <script type='text/javascript' src=''></script>
+                                <script type='text/Javascript'>$(document).ready(function(){
+//Menu Toggle Script
+$("#menu-toggle").click(function(e) {
+e.preventDefault();
+$("#wrapper").toggleClass("toggled");
+});
+
+// For highlighting activated tabs
+$("#tab1").click(function () {
+$(".tabs").removeClass("active1");
+$(".tabs").addClass("bg-light");
+$("#tab1").addClass("active1");
+$("#tab1").removeClass("bg-light");
+});
+$("#tab2").click(function () {
+$(".tabs").removeClass("active1");
+$(".tabs").addClass("bg-light");
+$("#tab2").addClass("active1");
+$("#tab2").removeClass("bg-light");
+});
+$("#tab3").click(function () {
+$(".tabs").removeClass("active1");
+$(".tabs").addClass("bg-light");
+$("#tab3").addClass("active1");
+$("#tab3").removeClass("bg-light");
+});
+})</script>
+</body>
+ </html>

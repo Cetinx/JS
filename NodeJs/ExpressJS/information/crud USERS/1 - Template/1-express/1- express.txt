@@ -1,0 +1,4 @@
+nodejs indirmek
+npm init -y kurmak
+express indirmek
+express ayarlamak

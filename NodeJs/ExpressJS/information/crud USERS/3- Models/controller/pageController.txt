@@ -1,0 +1,9 @@
+exports.getIndexPage = (req,res) => {
+
+    res.render('index')
+}
+
+exports.getHomePage = (req,res) => {
+
+    res.render('Home')
+}

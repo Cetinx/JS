@@ -1,0 +1,33 @@
+const User = require('../models/User')
+
+
+exports.userCrate = async(req,res) => {
+
+    try {
+        const user = await User.create(req.body)
+        res.redirect('users')
+        
+    } catch (error) {
+        
+        console.log(error);
+    }
+
+}
+
+
+exports.usersFind = async(req,res) => {
+
+    try {
+        const user = await User.find()      
+        res.render('users' , {
+       
+            user
+       
+        })
+        
+    } catch (error) {
+        
+        console.log(error);
+    }
+
+}
