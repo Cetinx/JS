@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({baseURL:'http://localhost:5555'})
+const API = axios.create({baseURL:'https://ctodolist.herokuapp.com'})
 
 export const getAllMemories = async () => await API.get('/memories')
 
