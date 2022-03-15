@@ -1,5 +1,5 @@
 import React , {useState,useEffect} from 'react'
-
+import { BrowserRouter, Routes, Route , Link } from "react-router-dom";
 
 import {getAllMemories , deleteMemory} from '../axios/index.js'
 import moment from 'moment'
@@ -33,7 +33,7 @@ const Memory = () => {
          
              <div className="card" style={{width: '18rem'}}>
              <div className="card-body">   
-                       <a className="card-title" href={`/memory/${Memory._id}`} >  {Memory.title}</a>
+                       <Link className="card-title" to={`/memory/${Memory._id}`} >  {Memory.title}</Link>
                        <p className="card-text mt-3" >{Memory.content}</p>
                        </div> 
             <ul className="list-group list-group-flush">
@@ -41,7 +41,7 @@ const Memory = () => {
             </ul>
 
             <div className="card-body">
-              <a  className="card-link" href={`/update/${Memory._id}`}> Uptade</a>
+              <Link  className="card-link" to={`/update/${Memory._id}`}> Uptade</Link>
                 <a className="card-link" style={{cursor:'pointer'}} onClick={() => {deleteMemory(Memory._id)}}  >Delete</a>
               </div>
  
