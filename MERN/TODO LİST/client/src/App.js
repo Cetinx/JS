@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 import CreateScreen from './Screens/CreateScreen';
 import HomeScreen from './Screens/HomeScreen';
@@ -8,6 +8,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import SingularScreen from './Screens/SingularScreen';
 import UpdateScreen from './Screens/UpdateScreen';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
